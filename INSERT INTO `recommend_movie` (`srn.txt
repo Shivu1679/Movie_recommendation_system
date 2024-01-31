@@ -1,0 +1,1 @@
+INSERT INTO `recommend_movie` (`srno`, `Name`, `Phone`, `Email`, `Password`, `Repeat Password`) VALUES ('2', 'Devendra Suthar', '234567891', 'Devu@gmail.com', 'Dev@7712', 'Dev@7712');

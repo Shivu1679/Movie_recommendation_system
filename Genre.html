@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movie Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+    
+        font-family: Arial, sans-serif;
+        text-align: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .background_image{
+        /* webkit-filter: blur(5px); */
+        height: 100vh;
+        width: 100vw;
+        background-image: url("https://wallpapers.com/images/hd/american-horror-movie-posters-9pvmdtvz4cb0xl37.webp") ; 
+        background-size: contain;
+        z-index: 0;
+        -webkit-filter: blur(5px);
+
+    }
+    
+    .container {
+        max-width: 500px;
+        align-content: center;
+        margin: 0 auto;
+        padding: 60px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(243, 241, 241, 0.1);
+        height: fit-content;
+        position: absolute;
+        z-index: 10;
+        display: block;
+        background-color: #9eaf2c;
+    }
+    
+    h1 {
+        color: #f2f0f0;
+    }
+    
+    label {
+        display: contents;          
+        margin-bottom: 100px;
+    }
+    
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #3d3e3a;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    
+    button:hover {
+        background-color: #b3007d;
+    }
+    
+     </style>
+
+             </head>
+<body> 
+    <div class="background_image">
+          
+    </div>
+     <div class="container">
+        <h1>Movie Recommendation System</h1>
+        <form action="recommend.php" method="POST">
+            <lable for="genre">Select your favorite genre:</lable>
+            <select name="genre" id="genre">
+                <option value="Select">Select</option>
+                <option value="romance">Romance</option>
+                <option value="horror">Horror</option>
+                <option value="teen-drama">teen-drama</option>
+                <option value="drama">Drama</option>
+            </select>
+            <button type="submit">Get recommendations</button>
+        </form>
+     </div>
+    </body>
+     </html>
